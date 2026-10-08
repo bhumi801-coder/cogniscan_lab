@@ -1,0 +1,27 @@
+{
+  "name": "cogniscan-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CogniScan Lab – SIH26055 (DRDO) – Team InceptionX_2.0 (React + Node.js)",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,green \"node --watch server/index.js\" \"vite\"",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.5",
+    "vite": "^8.3.3"
+  }
+}
